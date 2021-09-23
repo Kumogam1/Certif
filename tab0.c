@@ -8,5 +8,5 @@ int all_zeros(int t[], int n) {
     for(int i = 0; i<n; i++){
       t[i] = 0;
     }
-    return t;
+    return n;
 }
