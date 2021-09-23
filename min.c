@@ -1,10 +1,12 @@
 /*@
 requires \valid(p);
 requires \valid(q);
+requires \valid(min);
 assigns *p;
 assigns *q;
-ensures min <= *p;
-ensures min <= *q;
+assigns min;
+ensures min <= p;
+ensures min <= q;
 */
 int min(int* p, int* q){
   int min;
