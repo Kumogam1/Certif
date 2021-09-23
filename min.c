@@ -7,6 +7,7 @@ assigns *q;
 assigns *min;
 ensures *min <= *p;
 ensures *min <= *q;
+ensures *min == *p || ensures *min == *q;
 */
 void min(int* p, int* q, int* min){
   if(*p < *q)
