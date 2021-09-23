@@ -4,6 +4,7 @@
 int all_zeros(int t[], int n) {
     /*@ loop invariant 0 <= i < n;
       @ loop invariant \forall int j; 0<= j < i ==> t[j] == 0;
+      @ loop assigns i, t[0..n-1];
       @ loop variant n - i;
       @*/
     for(int i = 0; i< n; i++){
