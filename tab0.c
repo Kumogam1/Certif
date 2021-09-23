@@ -2,8 +2,8 @@
 @ ensures \result == 0 ==> (\forall integer i; 0 <= i < n ==> t[i] == 0);
 @*/
 int all_zeros(int t[], int n) {
-    /*@ loop invariant n>0;
-      @ loop variant i;
+    /*@ loop invariant 0 <=i < n;
+      @ loop variant n - i;
       @*/
     for(int i = 0; i<n; i++){
       t[i] = 0;
