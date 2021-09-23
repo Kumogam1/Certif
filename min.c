@@ -3,8 +3,8 @@ requires \valid(p);
 requires \valid(q);
 assigns *p;
 assigns *q;
-ensures max <= *p;
-ensures max <= *q;
+ensures min <= *p;
+ensures min <= *q;
 */
 int min(int* p, int* q){
   int min;
