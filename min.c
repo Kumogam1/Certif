@@ -8,11 +8,9 @@ ensures max <= *q;
 */
 int min(int* p, int* q){
   int min;
-  if(*p < *q){
+  if(*p < *q)
     min = *p;
-  }
-  else{
+  else
     min = *q;
-  }
   return min;
 }
