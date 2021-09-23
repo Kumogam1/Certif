@@ -2,8 +2,6 @@
 requires \valid(p);
 requires \valid(q);
 requires \valid(min);
-assigns *p;
-assigns *q;
 assigns *min;
 ensures *min <= *p;
 ensures *min <= *q;
